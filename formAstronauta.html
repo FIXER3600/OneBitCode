@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h3>Cadastro da liga dos Astronautas</h3>
+	<form action="" method="get" autocomplete="on">
+		<label for="name">Nome: </label><input type="text" name="name" id="name" placeholder="Digite um nome..." required>
+		<br>
+		<br>
+		<label for="email">Email: </label><input type="email" name="email" id="email" placeholder="Digite seu melhor email..." required>
+		- <label for="pwd">Password: </label><input type="password" name="pwd" id="pwd" placeholder="Digite sua senha..." required>
+		<br>
+		<br>
+		<label for="date">Data de Nascimento: </label><input type="date" name="date" id="date" required> - 
+		<label for="foto">Foto: </label><input type="file" name="myfile" id="myfile">
+		<br>
+		<br>
+		<label for="nac">Nacionalidade: </label>
+		<select name="nacio" id="nacio">
+		  <option value="Russo" selected>Russo</option>
+		  <option value="Americano">Americano</option>
+		  <option value="Brasileiro">Brasileiro</option>
+		</select>
+		- <label for="gender">Gênero: </label>
+		<input type="radio" name="F" id="F"><label for="F">F</label>
+		<input type="radio" name="M" id="M"><label for="M">M</label>
+		<br><br>
+		<label for="skill">Suas principais qualidades: </label><br>
+		<label for="inteligence">Inteligência </label><input type="checkbox" name="intel" id="intel"> |
+		<label for="resilience">Resiliência </label><input type="checkbox" name="resil" id="resil"> |
+		<label for="fisic">Preparo Físico </label><input type="checkbox" name="fisic" id="fisic"> |
+		<label for="education">Educação </label><input type="checkbox" name="educ" id="educ"> |<br><br>
+		<textarea name="why" id="why" rows="10" cols="30" placeholder="Por que você gostaria de ser um astronauta?"></textarea>
+		<br><br>
+		<input type="submit" name="create" id="create" value="Criar">
+	</form>
+</body>
+</html>
